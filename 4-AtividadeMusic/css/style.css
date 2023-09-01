@@ -39,8 +39,8 @@
   flex-direction: column;
   gap: 30px;
   color: white;
-  top: 300px;
-  left: 50px;
+  padding-top: 300px;
+  padding-left: 50px;
 }
 
 .principal-conteudo h1 {
@@ -68,6 +68,11 @@
   width: 100%;
 }
 
+.card-img-princing {
+  display: flex;
+  justify-content: center;
+}
+
 .card-conteudo {
   display: flex;
   flex-direction: column;
@@ -86,13 +91,22 @@ section {
   padding: 20px 50px;
 }
 
-.secao-dance {
-  background-color: var(--cor-primaria);
+.secao-dance,
+.secao-princing {
   color: white;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+
+.secao-dance {
+  background-color: var(--cor-primaria);
+}
+
+.secao-princing {
+  background-color: var(--cor-secundaria);
+}
+
 .cabecalho-secao {
   display: flex;
   flex-direction: column;
