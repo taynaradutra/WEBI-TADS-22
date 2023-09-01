@@ -68,6 +68,18 @@
   width: 100%;
 }
 
+.card-princing {
+  width: 400px;
+  height: 500px;
+  background-color: var(--cor-primaria);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+}
+
 .card-img-princing {
   display: flex;
   justify-content: center;
@@ -85,6 +97,30 @@
 
 .card-conteudo p {
   text-align: justify;
+}
+
+.card-conteudo a {
+  background-color: var(--cor-secundaria);
+  border: 2px solid var(--cor-secundaria);
+  width: 100%;
+  height: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.card-conteudo a:hover {
+  background-color: transparent;
+}
+
+.card-conteudo-princing {
+  gap: 25px;
 }
 
 section {
@@ -124,4 +160,59 @@ section {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.secao-amazing {
+  background-color: var(--cor-primaria);
+  display: flex;
+  flex-direction: column;
+}
+
+.container-amazing {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.img-amazing {
+  border: 2px solid yellow;
+  width: 50%;
+}
+
+.img-amazing figure img {
+  width: 100%;
+}
+
+.conteudo-amazing {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 50px;
+  border: 2px solid red;
+}
+
+.conteudo-amazing h3 {
+  font-size: 40px;
+}
+
+.conteudo-amazing p {
+  font-size: 20px;
+}
+
+.conteudo-amazing a {
+  background-color: var(--cor-secundaria);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 35px;
+
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
