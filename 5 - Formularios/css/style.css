@@ -37,7 +37,8 @@ form fieldset {
   padding: 10px;
 }
 
-.dados-pessoais div {
+.dados-pessoais div,
+.dados-profissionais > div {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -61,14 +62,14 @@ input[type="text"]:focus {
   outline: 3px solid orange;
   border: none;
 }
-
+/*
 .dados-profissionais .mod-trabalho,
 .mensagem,
 .experiencia {
   display: flex;
   flex-direction: column;
   gap: 5px;
-}
+}*/
 
 .form-botoes {
   display: flex;
