@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --cor-primaria: #ff6311;
+  --cor-secundaria: #2c2b2b;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.cabecalho {
+  background-color: var(--cor-secundaria);
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /*sempre que incluir flex, iremos incluir o flex-wrap (nos ajudará na responsividade)*/
+}
+
+.cabecalho-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 35px;
+}
+
+.cabecalho-menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.cabecalho-menu ul li a:hover {
+  color: var(--cor-primaria);
+}
+.principal {
+  background-image: url("../img/banner.png");
+  height: 630px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.principal-conteudo {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  padding-top: 300px;
+  padding-left: 50px;
+}
+
+.principal-conteudo h1 {
+  font-size: 60px;
+}
+
+.principal-conteudo a {
+  width: 200px;
+  height: 35px;
+  background-color: var(--cor-primaria);
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 400px;
+  height: 500px;
+  background-color: var(--cor-secundaria);
+}
+
+.card-img figure img {
+  width: 100%;
+}
+
+.card-princing {
+  width: 400px;
+  height: 500px;
+  background-color: var(--cor-primaria);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.card-img-princing {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+  color: white;
+}
+
+.card-conteudo p {
+  text-align: justify;
+}
+
+.card-conteudo a {
+  background-color: var(--cor-secundaria);
+  border: 2px solid var(--cor-secundaria);
+  width: 100%;
+  height: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.card-conteudo a:hover {
+  background-color: transparent;
+}
+
+.card-conteudo-princing {
+  gap: 25px;
+}
+
+section {
+  padding: 20px 50px;
+}
+
+.secao-dance,
+.secao-princing,
+.secao-statics,
+.secao-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cabecalho-secao {
+  color: white;
+}
+
+.cabecalho-secao h2 {
+  font-size: 36px;
+}
+
+.cabecalho-secao p {
+  width: 900px;
+}
+.secao-dance {
+  background-color: var(--cor-primaria);
+}
+
+.secao-princing {
+  background-color: var(--cor-secundaria);
+}
+
+.cabecalho-secao {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cabecalho-secao p {
+  text-align: justify;
+}
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.secao-amazing {
+  background-color: var(--cor-primaria);
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  padding: 0px 0px;
+}
+
+.container-amazing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  color: white;
+}
+
+.img-amazing {
+  width: 50%;
+  height: 100%;
+}
+
+.img-amazing figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.conteudo-amazing {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  padding: 50px;
+}
+
+.conteudo-amazing h3 {
+  font-size: 40px;
+}
+
+.conteudo-amazing p {
+  font-size: 20px;
+}
+
+.conteudo-amazing a {
+  background-color: var(--cor-secundaria);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 200px;
+  height: 35px;
+
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.secao-statics {
+  background-color: var(--cor-secundaria);
+  color: white;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.secao-statics .container-cards {
+  gap: 150px;
+}
+
+.card-statics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card-statics h3 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.card-statics span {
+  font-size: 25px;
+}
+
+.secao-herbert {
+  background-color: var(--cor-secundaria);
+  background-image: url("../img/sec-4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  height: 600px;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.secao-herbert p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.secao-subscribe {
+  background-color: var(--cor-primaria);
+  height: 400px;
+  gap: 50px;
+}
+
+.secao-subscribe form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.secao-subscribe form input {
+  height: 35px;
+  width: 300px;
+  padding: 5px 15px;
+  border: none;
+}
+
+.secao-subscribe form button {
+  width: 150px;
+  height: 35px;
+  border: none;
+  cursor: pointer; /*altera o curso para  a "mãozinha" */
+
+  background-color: var(--cor-secundaria);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.secao-subscribe form button:hover {
+  background-color: var(--cor-primaria);
+  border: 3px solid var(--cor-secundaria);
+  color: var(--cor-secundaria);
+}
+
+footer {
+  padding: 40px 50px;
+  background-color: var(--cor-secundaria);
+  color: white;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*
+  dividi o footer em duas colunas. 
+  A primeira coluna se refere a parte de musicology, pois ela tem um tamanho um pouco maior. Darei 60% do espaço à ela. 
+  A segunda coluna irá incorporar as três colunas de menu (About, Services e Other) e terá 40% do footer. 
+*/
+
+footer .col-1 {
+  width: 60%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .redes-sociais {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+footer .col-2 {
+  width: 40%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .footer-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .footer-menu-links ul {
+  list-style: none;
+}
+
+footer .footer-menu-links ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .footer-menu-links ul li a:hover {
+  color: var(--cor-primaria);
+}
