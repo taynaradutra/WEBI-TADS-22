@@ -2,9 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-html {
   font-size: 18px;
 }
 
@@ -19,18 +16,22 @@ h1 {
   padding: 30px;
 
   width: 500px;
-  font-size: 20px;
+  font-size: 50px;
 }
 
 .item-em {
   margin-top: 20px;
   border: 3px solid crimson;
+  width: 50%;
 }
 
 .um-em {
+  background-color: yellow;
+  font-size: 0.5em;
 }
 
 .dois-em {
+  font-size: 2em;
 }
 
 .tres-em {
@@ -43,7 +44,7 @@ h1 {
   padding: 30px;
 
   width: 600px;
-  font-size: 10px;
+  font-size: 2rem;
 }
 
 .item-rem {
@@ -52,7 +53,9 @@ h1 {
 }
 
 .um-rem {
+  font-size: 1rem;
 }
 
 .dois-rem {
+  font-size: 50%;
 }

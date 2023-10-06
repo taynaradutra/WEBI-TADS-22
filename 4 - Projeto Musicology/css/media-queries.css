@@ -1,0 +1,7 @@
+@media screen and (max-width: 460px) and (orientation: portrait) {
+  .cabecalho {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
