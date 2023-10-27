@@ -1,0 +1,9 @@
+@mixin button($cor-fundo, $cor-hover) {
+  padding: 20px;
+  background-color: $cor-fundo;
+  color: black;
+
+  &:hover {
+    background-color: $cor-hover;
+  }
+}

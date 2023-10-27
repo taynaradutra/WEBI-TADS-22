@@ -1,0 +1,48 @@
+@import "_variables.scss";
+@import "_buttons.scss";
+
+header {
+  background-color: $cor-primaria;
+  display: flex;
+  justify-content: space-between;
+
+  .menu {
+    nav {
+      ul {
+        list-style: none;
+        li {
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.card {
+  display: flex;
+  border: 2px solid black;
+
+  &-img {
+    width: 100%;
+  }
+
+  &-descricao {
+    font-size: 20px;
+  }
+}
+
+.button {
+  @include button(orange, rgb(255, 123, 0));
+}
+
+.button-grey {
+  @include button(grey, rgb(69, 68, 68));
+}
+section {
+  padding: $espacamento;
+}
+
+@import "_footer.scss";

@@ -1,0 +1,32 @@
+/* 
+1. Grids 
+2. Breakpoints
+3. Containers
+4. Spacing
+
+
+*/
+* {
+  font-size: 16px;
+}
+header {
+  height: 10vh;
+}
+.carousel-inner {
+  height: 90vh;
+  background-color: red;
+}
+
+.icon {
+  font-size: 2rem;
+  color: red;
+}
+@media (max-width: 992px) {
+  header {
+    height: 100%;
+  }
+
+  .carousel-inner {
+    height: 100%;
+  }
+}

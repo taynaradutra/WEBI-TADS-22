@@ -1,0 +1,50 @@
+header {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+}
+header .menu nav ul {
+  list-style: none;
+}
+header .menu nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  border: 2px solid black;
+}
+.card-img {
+  width: 100%;
+}
+.card-descricao {
+  font-size: 20px;
+}
+
+.button {
+  padding: 20px;
+  background-color: orange;
+  color: black;
+}
+.button:hover {
+  background-color: rgb(255, 123, 0);
+}
+
+.button-grey {
+  padding: 20px;
+  background-color: grey;
+  color: black;
+}
+.button-grey:hover {
+  background-color: rgb(69, 68, 68);
+}
+
+section {
+  padding: 10px 20px 10px 20px;
+}
+
+footer {
+  background-color: red;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

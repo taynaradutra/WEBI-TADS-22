@@ -1,0 +1,20 @@
+/* Fontes */
+:root {
+  --font-default: "Open Sans", sans-serif;
+  --font-primary: "Amatic SC", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+}
+
+/* Cores */
+:root {
+  --color-default: #212529;
+  --color-primary: #ce1212;
+  --color-secondary: #37373f;
+}
+
+/* About 
+ icons 
+  - bi-clipboard-data
+  - bi-gem
+  - bi-inboxes
+*/
