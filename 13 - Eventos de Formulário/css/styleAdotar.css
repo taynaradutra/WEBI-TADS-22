@@ -9,3 +9,7 @@
   visibility: visible;
   color: red;
 }
+
+input:blur {
+  border: 1px solid yellow;
+}

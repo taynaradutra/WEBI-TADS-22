@@ -92,6 +92,15 @@
   background-color: red;
 }
 
+.change-scale {
+  scale: 1.05;
+}
+
+input:focus {
+  border: 2px solid yellow;
+  outline: none;
+}
+
 @media (max-width: 600px) {
   * {
     font-size: 22px;

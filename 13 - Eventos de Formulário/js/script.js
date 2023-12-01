@@ -52,7 +52,27 @@ const criarCards = () => {
   });
 };
 
-criarCards();
+window.addEventListener("load", () => {
+  criarCards();
 
-let container = document.querySelector(".container");
-container.classList.add("change-background");
+  let cards = document.querySelectorAll(".card");
+  cards.forEach((elemento) => {
+    elemento.addEventListener("mouseover", () => {
+      elemento.classList.add("change-scale");
+    });
+
+    elemento.addEventListener("mouseout", () => {
+      elemento.classList.remove("change-scale");
+    });
+
+    elemento.lastElementChild.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      let animalSelecionado =
+        elemento.lastElementChild.getAttribute("idAnimal");
+      sessionStorage.setItem("idAnimal", animalSelecionado);
+      document.cookie = `idAnimal=${animalSelecionado}`;
+      window.location.href = "./adotar.html";
+    });
+  });
+});

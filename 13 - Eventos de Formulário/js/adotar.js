@@ -1,52 +1,55 @@
 let formulario = document.querySelector("form");
 
-const validarCampos = (nome, tel, email, renda, residencia, opcao) => {
+const validarDados = (nome, telefone, email, renda, opcao, intencao) => {
   let control = true;
+
   if (nome.value.trim() == "") {
-    nome.classList.add("erro");
+    nome.style.backgroundColor = "red";
     control = false;
   }
-  if (tel.value.trim() == "") {
-    tel.classList.add("erro");
+
+  if (telefone.value.trim() == "") {
+    telefone.style.backgroundColor = "red";
     control = false;
   }
   if (email.value.trim() == "") {
-    email.classList.add("erro");
+    email.style.backgroundColor = "red";
     control = false;
   }
 
   if (renda == null) {
-    document.querySelector("#erro-renda").classList.add("msgm-erro--active");
+    let elementoErro = document.querySelector("#erro-renda");
+    elementoErro.classList.add("msgm-erro--active");
     control = false;
   }
 
   return control;
 };
 
-let nome = document.querySelector("#nome");
-nome.addEventListener("blur", () => {
-  nome.style.backgroundColor = "pink";
-  console.log("entrou");
-});
-
 formulario.addEventListener("submit", (event) => {
   let nome = document.querySelector("#nome");
-  let tel = document.querySelector("#telefone");
+  let telefone = document.querySelector("#telefone");
   let email = document.querySelector("#email");
   let renda = document.querySelector("input[name='renda']:checked");
   let residencia = document.querySelector("#residencia");
   let opcao = residencia.options[residencia.selectedIndex];
-  console.log(renda);
+  let intencao = document.querySelector("#intencao");
 
-  if (validarCampos(nome, tel, email, renda, residencia, opcao)) {
+  if (validarDados(nome, telefone, email, renda, opcao, intencao)) {
     let adotante = {
-      nome: nome.value,
-      tel: telefone.value,
-      email: email.value,
+      nome: nome.value.trim(),
+      telefone: telefone.value.trim(),
+      email: email.value.trim(),
       renda: renda.value,
       residencia: opcao.value,
+      intencao: intencao.value.trim(),
+      idAnimal: sessionStorage.getItem("idAnimal"),
     };
 
-    console.log(adotante);
+    let adotanteJson = JSON.stringify(adotante);
+    console.log(adotanteJson);
+
+    let adotante2 = JSON.parse(adotanteJson);
+    console.log(adotante2);
   } else event.preventDefault();
 });
